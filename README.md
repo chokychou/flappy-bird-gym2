@@ -45,6 +45,8 @@ To install `flappy-bird-gym`, simply run the following command:
     
 ## Usage
 
+See example https://github.com/chokychou/Q-flappy
+
 Like with other `gym` environments, it's very easy to use `flappy-bird-gym`.
 Simply import the package and create the environment with the `make` function.
 Take a look at the sample code below:
