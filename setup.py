@@ -1,6 +1,6 @@
 # MIT License
 #
-# Copyright (c) 2020 Gabriel Nogueira (Talendar)
+# Copyright (c) 2020 Gabriel Nogueira (Talendar), Yi Zhou (chokychou)
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -27,7 +27,7 @@
 from typing import List
 import setuptools
 
-_VERSION = "0.3.0"
+_VERSION = "0.0.1"
 
 # Short description.
 short_description = "An OpenAI gym environment for the Flappy Bird game."
@@ -36,9 +36,9 @@ short_description = "An OpenAI gym environment for the Flappy Bird game."
 # The compatible release operator (`~=`) is used to match any candidate version
 # that is expected to be compatible with the specified version.
 REQUIRED_PACKAGES = [
-    "gym ~= 0.18.0",
-    "numpy ~= 1.19.5",
-    "pygame ~= 2.0.1",
+    "gym ~= 1.23.5",
+    "numpy ~= 1.23.5",
+    "pygame ~= 2.6.1",
 ]
 
 # Packages which are only needed for testing code.
@@ -51,15 +51,15 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="flappy-bird-gym",
+    name="flappy-bird-gym2",
     version=_VERSION,
-    author="Gabriel Guedes Nogueira (Talendar)",
-    author_email="gabriel.gnogueira@gmail.com",
+    author="Yi Zhou(chokychou)",
+    author_email="shenmeguislb@gmail.com",
     description=short_description,
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/Talendar/flappy-bird-gym",
-    download_url="https://github.com/Talendar/flappy-bird-gym/releases",
+    url="https://github.com/chokychou/flappy-bird-gym2",
+    download_url="https://github.com/chokychou/flappy-bird-gym2/releases",
     # Contained modules and scripts:
     packages=setuptools.find_packages(),
     package_data={"flappy_bird_gym": ["assets/sprites/*",
@@ -74,6 +74,7 @@ setuptools.setup(
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.11",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
         "Intended Audience :: Developers",

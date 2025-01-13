@@ -14,6 +14,9 @@ clean:
 deployment: clean
 	python3 setup.py sdist bdist_wheel
 
+ship-dev: test deployment
+	python3 -m twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+
 # ship the deployment package to PyPi
 ship: test deployment
-	twine upload dist/*
+	python3 -m twine upload --repository-url https://upload.pypi.org/legacy/ dist/*

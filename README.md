@@ -48,8 +48,8 @@ Take a look at the sample code below:
 
 ```
 import time
-import flappy_bird_gym
-env = flappy_bird_gym.make("FlappyBird-v0")
+import flappy_bird_gym2
+env = flappy_bird_gym2.make("FlappyBird-v0")
 
 obs = env.reset()
 while True:
@@ -76,8 +76,8 @@ env.close()
 
 To play the game (human mode), run the following command:
 
-    $ flappy_bird_gym
+    $ flappy_bird_gym2
     
 To see a random agent playing, add an argument to the command:
 
-    $ flappy_bird_gym --mode random
+    $ flappy_bird_gym2 --mode random

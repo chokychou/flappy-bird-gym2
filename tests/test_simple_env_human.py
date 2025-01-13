@@ -28,12 +28,12 @@ human player.
 import time
 
 import pygame
-import flappy_bird_gym
+import flappy_bird_gym2
 
 
 def play():
-    # env = gym.make("flappy_bird_gym:FlappyBird-v0")
-    env = flappy_bird_gym.make("FlappyBird-v0")
+    # env = gym.make("flappy_bird_gym2:FlappyBird-v0")
+    env = flappy_bird_gym2.make("FlappyBird-v0")
 
     clock = pygame.time.Clock()
     score = 0

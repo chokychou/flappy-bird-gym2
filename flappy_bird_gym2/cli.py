@@ -27,7 +27,7 @@
 import argparse
 import time
 
-import flappy_bird_gym
+import flappy_bird_gym2
 
 
 def _get_args():
@@ -47,7 +47,7 @@ def _get_args():
 
 
 def random_agent_env():
-    env = flappy_bird_gym.make("FlappyBird-v0")
+    env = flappy_bird_gym2.make("FlappyBird-v0")
     env.reset()
     score = 0
     while True:
@@ -76,7 +76,7 @@ def main():
     args = _get_args()
 
     if args.mode == "human":
-        flappy_bird_gym.original_game.main()
+        flappy_bird_gym2.original_game.main()
     elif args.mode == "random":
         random_agent_env()
     else:

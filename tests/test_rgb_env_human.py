@@ -27,7 +27,7 @@ human player.
 
 import time
 
-import flappy_bird_gym
+import flappy_bird_gym2
 import numpy as np
 import pygame
 from PIL import Image
@@ -121,7 +121,7 @@ def visualize_obs(env, greyscale: bool):
 
 
 if __name__ == "__main__":
-    flappy_env = flappy_bird_gym.make("FlappyBird-rgb-v0")
+    flappy_env = flappy_bird_gym2.make("FlappyBird-rgb-v0")
 
     print(f"Action space: {flappy_env.action_space}")
     print(f"Observation space: {flappy_env.observation_space}")

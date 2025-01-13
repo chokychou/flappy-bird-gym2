@@ -26,12 +26,12 @@ random agent.
 """
 
 import time
-import flappy_bird_gym
+import flappy_bird_gym2
 
 
 def main():
-    # env = gym.make("flappy_bird_gym:FlappyBird-v0")
-    env = flappy_bird_gym.make("FlappyBird-v0")
+    # env = gym.make("flappy_bird_gym2:FlappyBird-v0")
+    env = flappy_bird_gym2.make("FlappyBird-v0")
     score = 0
     obs = env.reset()
     while True:
