@@ -1,3 +1,6 @@
+# Note
+This projects maintains Talendar/flappy-bird-gym.
+
 ## Flappy Bird for OpenAI Gym
 
 ![Python versions](https://img.shields.io/pypi/pyversions/flappy-bird-gym)
@@ -38,7 +41,7 @@ observations. The yielded attributes are the:
 
 To install `flappy-bird-gym`, simply run the following command:
 
-    $ pip install flappy-bird-gym
+    $ pip install flappy-bird-gym2
     
 ## Usage
 
@@ -48,8 +51,8 @@ Take a look at the sample code below:
 
 ```
 import time
-import flappy_bird_gym2
-env = flappy_bird_gym2.make("FlappyBird-v0")
+import flappy_bird_gym
+env = flappy_bird_gym.make("FlappyBird-v0")
 
 obs = env.reset()
 while True:
@@ -76,8 +79,8 @@ env.close()
 
 To play the game (human mode), run the following command:
 
-    $ flappy_bird_gym2
+    $ flappy_bird_gym
     
 To see a random agent playing, add an argument to the command:
 
-    $ flappy_bird_gym2 --mode random
+    $ flappy_bird_gym --mode random

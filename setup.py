@@ -27,7 +27,7 @@
 from typing import List
 import setuptools
 
-_VERSION = "0.0.1"
+_VERSION = "0.0.3"
 
 # Short description.
 short_description = "An OpenAI gym environment for the Flappy Bird game."
@@ -36,7 +36,7 @@ short_description = "An OpenAI gym environment for the Flappy Bird game."
 # The compatible release operator (`~=`) is used to match any candidate version
 # that is expected to be compatible with the specified version.
 REQUIRED_PACKAGES = [
-    "gym ~= 1.23.5",
+    "gym ~= 0.26.2",
     "numpy ~= 1.23.5",
     "pygame ~= 2.6.1",
 ]
